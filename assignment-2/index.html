@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>assignment-2</title><br>
+    <style>
+        body{
+            margin-top: 100px;
+            margin-bottom: 300px;
+            margin-left: 200px;
+            margin-right: 400px;
+            border: 2px solid black;
+            padding: 30px;
+            position: relative;
+
+        }
+        body::before{
+            content: "";
+            position: absolute ;
+            height: 100%;
+            width: 100%;
+            top:0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display:inline block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1;
+            background-image: url(th.jpg);
+            opacity: 0.3;
+            box-sizing: border-box;
+        }
+        #table{
+            margin-right: 300px;
+            margin-left: 50px;
+            
+            border: 5px solid red;
+            border-radius: 20px;
+            padding-left: 50px;
+            padding-bottom: 40px;
+            }
+        table,tr,th,td{
+            border: 3px solid black;
+        }
+        .ordered{
+            margin-left: 150px;
+            margin-right: 200px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+            border: 5px solid red;
+            border-radius: 20px;
+            
+        }
+        .unordered{
+            margin-left: 250px;
+            margin-right: 100px;
+            padding-left: 50px;
+            padding-bottom: 70px;
+            border: 5px solid red;
+            border-radius: 20px;
+        }
+        a{
+            font-size: 30px;
+            padding-left: 50px;
+            
+        }
+        hr{
+            border: 2px solid black;
+        }
+        .size{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://cmritautonomous.org/beeserp/Login.aspx">CMRIT Student Login</a>
+    <hr><br><br><br>
+
+    <div id="table">
+        <h2><u>STUDENT DETAILS</u></h2>
+        <table class="size">
+            <tr>
+                <th>Roll No:</th>
+                <th>Name</th>
+                <th>Attandance</th>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>Gowtham</td>
+                <td>86%</td>
+            </tr>
+            <tr>
+                <td>76</td>
+                <td>Rakesh</td>
+                <td>94%</td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td>Musharraf</td>
+                <td>82%</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Navneeth</td>
+                <td>76%</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="ordered">
+        <h2><u>THEORY SUBJECTS</u></h2>
+        <ol class="size" type="I">
+            <li>Java</li>
+            <li>OS</li>
+            <li>DAA</li>
+            <li>CN</li>
+            <li>ACD</li>
+        </ol>
+    </div>
+    <br>
+    <div class="unordered">
+        <h2><u>LABS</u></h2>
+        <ul class="size" type="square">
+            <li>Java</li>
+            <li>OS</li>
+            <li>SI</li>
+            <li>ACTS</li>
+        </ul>    
+    </div>
+</body>
+</html>
